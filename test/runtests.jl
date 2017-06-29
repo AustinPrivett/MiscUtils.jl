@@ -1,5 +1,8 @@
 using MiscUtils
 using Base.Test
 
-# write your own tests here
-@test 1 == 2
+@def makesomevars begin
+  x = 1
+end
+@makesomevars
+@test x == 1
