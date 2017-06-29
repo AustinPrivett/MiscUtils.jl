@@ -16,7 +16,6 @@ Copied from `@def` in Optim.jl.
 
 **Warning** Can lead to spaghetti code a la FORTRAN GOTO if used poorly.
 """
-
 macro def(name, definition)
   esc(quote
     macro $name()
